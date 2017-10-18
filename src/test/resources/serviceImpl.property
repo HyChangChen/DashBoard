@@ -1,0 +1,23 @@
+package com.hxqh.eam.service;
+
+_DAOLIST_
+
+_IMPORT_MODEL_
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * Created by lh on _DATE_.
+ */
+@Transactional
+@Service("_model_Service")
+public class _MODEL_ServiceImpl implements _MODEL_Service {
+    DECLARE
+
+    METHOD
+}

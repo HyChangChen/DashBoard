@@ -1,0 +1,226 @@
+/*顶部div*/
+.top { /* background-color: #204a77; */
+    width: 100%;
+    height: 13%;
+    min-height: 120px;
+    color: #fff;
+    background: -moz-linear-gradient(top, #6d97c1, #204a77);
+    background: -webkit-linear-gradient(top, #6d97c1, #204a77);
+    background: linear-gradient(top, #6d97c1, #204a77);
+    background: -o-linear-gradient(top, #6d97c1, #204a77);
+    background: -ms-linear-gradient(top, #6d97c1, #204a77);
+}
+
+.top > div > span {
+    color: #fff;
+    font-family: "微软雅黑", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/*left-菜单栏*/
+.xlcd:before {
+    padding-left: 10px;
+    content: "﹀"
+}
+
+.xlcd {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px !important;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg); /* Internet Explorer */
+    -moz-transform: rotate(-90deg); /* Firefox */
+    -webkit-transform: rotate(-90deg); /* Safari 和 Chrome */
+    -o-transform: rotate(-90deg); /* Opera */
+}
+
+.xlcddown:before {
+    padding-left: 10px;
+    content: "﹀"
+}
+
+.xlcddown {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px !important;
+}
+
+.sz:after {
+    float: right;
+    margin: 14px 10px 0 0
+}
+
+.icon-chevron-right1:before {
+    padding-left: 10px;
+}
+
+.icon-chevron-right2:before {
+    padding-left: 10px;
+}
+
+.icon-chevron-right3:before {
+    padding-left: 10px;
+}
+
+.glyph-icon {
+    vertical-align: middle;
+    font-family: FontAwesome;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 4px;
+    float: left;
+}
+
+.left-menu {
+    position: absolute;
+    float: left;
+    min-height: 87%;
+    background: #339999;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#menu {
+    float: left;
+    width: 230px;;
+    list-style: none;
+    line-height: 38px;
+    color: #fff;
+    overflow-y: auto;
+    height: 592px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#menu ul {
+    list-style: none;
+    background: #fff
+}
+
+#menu li {
+    color: #fff;
+    float: left;
+    width: 100%
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu a:hover {
+    text-decoration: none;
+}
+
+#menu > li > a {
+    cursor: pointer;
+    position: relative;
+    padding-left: 10px;;
+    outline: none;
+    background: #339999;
+    display: block;
+    border-top: 1px solid #43a6a6;
+    font-size: 14px;
+    border-bottom: 1px solid #208c8c;
+    color: #fff;
+    font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "\9ED1\4F53", Arial, sans-serif;
+}
+
+#menu > li > a:hover {
+    background: #fff;
+    color: #339999;
+}
+
+#menu li ul {
+    width: 100%;
+    float: left;
+}
+
+.menu-list ul {
+    margin-bottom: 1px;
+    line-height: 38px;
+}
+
+.menu-list ul li {
+    height: 38px !important;
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.menu-list a {
+    background: #fff;
+    height: 38px;
+    color: #616161;
+    font-size: 13px;
+    padding-left: 50px;
+    background: url("../imgs/tree-bg.png") no-repeat left center;
+}
+
+.menu-list a:hover{
+    color: #339999;
+}
+
+.menu-list a i {
+    opacity: 1;
+}
+
+.menu-list ul a {
+    display: block;
+}
+
+.specialclass {
+    background: #0c89ff !important
+}
+
+/*main导航滚动条*/
+.left-menu::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.left-menu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #327979), color-stop(0.72, #26c1c1), color-stop(0.86, #3b7373));
+}
+
+.left-menu::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+/*main内容显示*/
+.right-content {
+    margin-left: 230px;
+    background: #fff;
+    overflow: hidden;
+
+}
+
+.content {
+    position: relative;
+    min-height: 100%;
+    margin-top: 0px;
+}
+
+#page_content {
+    position: absolute;
+    width: 100%;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #327979), color-stop(0.72, #26c1c1), color-stop(0.86, #3b7373));
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+
+
+

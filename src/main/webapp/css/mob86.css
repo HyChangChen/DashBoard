@@ -1,0 +1,70 @@
+#mob86{
+    background: #03091A;
+}
+#mob86 h3{
+    font-size: 42px;
+    font-family: "Arial";
+    color: #fff;
+    float: left;
+    height: 10px;
+    display: block;
+    width: 400px;
+}
+.md2 table tr td{
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    background-color: #0C0E26;
+}
+#mob86 h4{
+    font-size: 34pt;
+    font-family: "Arial";
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+}
+.md5 table thead{
+    background: #015E8A;
+    color: #fff;
+    border: #0c0e26 0px solid;
+    font-size: 30px;
+    text-align: center;
+}
+.md5 table tbody tr{
+    line-height: 65px;
+    border: #0c0e26 0px solid;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+#mob86 table tr td{
+    border: 2px solid #03091A;
+}
+.bg-red{
+    background: #FF0000;
+}
+.bg-blue{
+    background: #33FF33;
+}
+.col-md-10 span.ticket-tit{
+    color: #FFFFFF;
+    margin-left: 30px;
+    line-height: 50px;
+    text-align: left;
+    font-size: 22px;
+    font-family: 'Arial';
+    /*padding-left: 20px;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.col-md-10 .mytitle span.ticket-time{
+    color: #fff;
+    font-size: 20px;
+    height:46px;
+    width: 350px;
+    line-height:46px;
+    display: block;
+    float: right;
+    padding-top: 25px;
+    margin-left: 360px;
+}

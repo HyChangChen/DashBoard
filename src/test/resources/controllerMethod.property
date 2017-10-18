@@ -1,0 +1,20 @@
+
+/**
+ *  _FUNCTION_  页面跳转接口
+ * @return
+ */
+@RequestMapping(value = "/_FUNCTION_", method = RequestMethod.GET)
+public String _FUNCTION_() {
+    return "_model_/_FUNCTION_";
+}
+
+/**
+ *  _FUNCTION_ 页面跳转接口
+ * @return
+ */
+@ResponseBody
+@RequestMapping(value = "/_DATA_", method = RequestMethod.GET)
+public List<_RAW_> _DATA_() {
+    List<_RAW_> _FUNCTION_List = _model_Service._GET_();
+    return _FUNCTION_List;
+}

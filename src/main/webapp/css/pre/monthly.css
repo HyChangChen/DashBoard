@@ -1,0 +1,49 @@
+.mtd-layout{
+    width: 100%;
+    height: 100%;
+    min-width: 1920px;
+    min-height: 1080px;
+    background: #03081d;
+    position: relative;
+}
+.mtd-layout table{
+    width: 1734px;
+    height: 860px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -430px;
+    margin-left: -867px;
+}
+.mtd-layout table thead tr td{
+    font-size: 30px;
+    font-family: "Arial";
+    color: rgb(206, 206, 206);
+    height: 80px;
+    line-height: 80px;
+    border: 2px solid #292a4a;
+    text-align: center;
+}
+.mtd-layout table tbody tr td{
+    font-size: 30px;
+    font-family: "Arial";
+    color: rgb(206, 206, 206);
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    border: 2px solid #292a4a;
+}
+.mtd-layout table tbody tr td:nth-child(1){
+    background: #21223c;
+}
+
+table.monthly thead tr td span.ticket-time{
+    color: rgb(206, 206, 206);
+    font-size: 20px;
+    line-height:82px;
+
+}
+table.monthly thead tr td{
+    background: #21223c;
+}

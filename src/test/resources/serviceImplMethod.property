@@ -1,0 +1,4 @@
+    @Override
+    public List<_RAW_> _GET_() {
+        return _FUNCTION_Dao.findAll();
+    }

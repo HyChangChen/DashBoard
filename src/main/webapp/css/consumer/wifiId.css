@@ -1,0 +1,117 @@
+.wifiId-layout{
+  width: 100%;
+  height: 100%;
+  background: #03081B;
+}
+.wifiId-layout .mycontent{
+  width: 100%;
+  height: 90%;
+
+}
+.wifiId-layout .mycontent .left{
+  width: 65%;
+  height: 80%;
+  background: #0A0F25;
+  float: left;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+.wifiId-layout .mycontent .right{
+  width: 30%;
+  height: 80%;
+  background: #0A0F25;
+  float: right;
+  margin-top: 3%;
+  margin-right: 2%;
+}
+.right .scoll-nav{
+  width: 100%;
+  height: 10%;
+  padding-top: 1px;
+}
+.right .item{
+  width: 100%;
+  height: 28%;
+}
+ul.first-nav{
+  margin-top: 10px;
+  clear: both;
+}
+ul.sec-nav{
+  margin-top: 5px;
+  clear: both;
+}
+ul.first-nav li{
+  float: left;
+  width: 50px;
+  text-align: center;
+  color: #42435f;
+  display: block;
+  font-size: 12px;
+  font-family: "Arial";
+}
+ul.sec-nav li{
+  float: left;
+  width: 50px;
+  height: 10px;
+  border-radius: 50%;
+  text-align: center;
+  color: #42435f;
+  display: block;
+}
+ul.first-nav li:hover{
+  color: rgb(248, 248, 251);
+}
+span.radius{
+  width: 10px;
+  height: 10px;
+  border: 1px solid #4a476a;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+span.radius:hover{
+  background: #4a476a;
+}
+
+.wifiId-layout .mytitle{
+  padding-left: 130px;
+  width: 100%;
+  height: 6%;
+  padding-top: 40px;
+  background: #0A0F25;
+  float: left;
+}
+
+.wifiId-layout .mytitle h3{
+  color: #fff;
+  display : inline;
+  font-size: 30px;
+  height: 50px;
+  width: 500px;
+  line-height: 50px;
+  font-family: microsoft yahei,heiti;
+  font-weight: normal;
+  float: left;
+}
+
+.wifiId-layout .mytitle span.ticket-time{
+
+  color: #FFFFFF;
+  font-size: 20px;
+  height:20px;
+  width: 350px;
+  line-height:20px;
+  display: block;
+  float:right;
+  margin-top: 26px;
+  margin-right: 200px;
+}
+.ket{
+  width: 30%;
+  height: 6%;
+
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Arial";
+}

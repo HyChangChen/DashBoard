@@ -1,0 +1,16 @@
+package hxqh.eam.abb.dao;
+
+import com.hxqh.eam.common.basedao.DaoSupport;
+import com.hxqh.eam.model.view.YYYY;
+import org.springframework.stereotype.Repository;
+
+
+/**
+ *
+ * @author lh
+ *
+ */
+@Repository("WWWW")
+public class ZZZZ extends DaoSupport<YYYY> implements XXXX {
+
+}

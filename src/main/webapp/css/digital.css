@@ -1,0 +1,79 @@
+.digital{
+	background: #03081C;
+	width: 100%;
+	min-height: 100%;
+	padding-bottom: 20px;
+}
+table.dig-13{
+	cellpadding: 2;
+	cellspacing: 0;
+	width: 100%;
+	color: #fff;
+	background: #03081C;
+}
+table.dig-13 td{
+	border:2px solid #242e49;
+}
+table.dig-13 thead{
+    background: #015e8a;
+}
+table.dig-13 thead tr{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+table.dig-13 thead tr:nth-child(1){
+	font-size: 24pt;
+}
+table.dig-13 thead tr:nth-child(2),table.dig-13 thead tr:nth-child(3){
+	font-size: 20pt;
+}
+.dig-tit{
+	text-align: left;
+    background-color: #1F3E50;
+    font-size: 26px;
+	height: 46px;
+}
+table.dig-13 tbody{
+	text-align:center;
+	background-color:#0C0E26;
+	font-size:20px;
+}
+table.dig-13 tbody tr{
+	height: 75px;
+}
+/*table.dig-13 tbody tr:nth-child(odd){
+	background: #0C0E26;
+}
+table.dig-13 tbody tr:nth-child(even){
+	background: #112B3A;
+}*/
+table.dig-13 tbody tr td.text-red{
+	color: #dd5a43;
+}
+table.dig-13 tbody tr td.text-blue{
+	color: #69aa46;
+}
+::-webkit-scrollbar{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #327979), color-stop(0.72, #26c1c1), color-stop(0.86, #3b7373));
+}
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+table.dig-13 td.td-tit{
+	background: #1F3E50;
+	color: #fff;
+	text-align: left;
+	padding-left:30px;
+}
+.mytitle{
+	text-align: left;
+	padding-left: 100px;
+}

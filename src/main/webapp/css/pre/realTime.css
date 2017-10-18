@@ -1,0 +1,76 @@
+.pre1-layout{
+    width: 100%;
+    min-width: 1920px;
+    background: #03081c;
+    height: 100%;
+    min-height: 1080px;
+}
+.pre1-layout .mycontent{
+    width: 94%;
+    height: 920px;
+}
+.pre1-layout .mytitle{
+    width:94%;
+    height: 136px;
+
+}
+
+.pre1-layout .mytitle h4{
+    font-size: 36px;
+    font-family: "Arial";
+    color: rgb(206, 206, 206);
+    height: 136px;
+    line-height: 136px;
+    padding-left: 3%;
+    display : inline;
+    float: left;
+    width: 50%;
+}
+.item{
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+    margin-bottom: 20px;
+    height: 452px;
+}
+.left{
+    float: left;
+    background-color: rgb(10, 15, 37);
+    width: 49.4%;
+    height: 100%;
+}
+.right{
+    float: right;
+    background-color: rgb(10, 15, 37);
+    width: 49.4%;
+    height: 100%;
+}
+.right h5{
+    height: 78px;
+    line-height: 78px;
+    color: #9F9FA1;
+    font-size: 26px;
+    font-family: 'Arial';
+}
+.pie-layout{
+    width: 90%;
+    height: 346px;
+    margin: 0 auto;
+    border: 1px solid #212538;
+}
+.pie-layout div{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.pre1-layout .mytitle span.ticket-time{
+    color:rgb(206, 206, 206);
+    font-size: 20px;
+    width: 300px;
+    line-height:20px;
+    display: block;
+    float:right;
+    margin-top: 60px;
+   margin-right: 60px;
+    width: 20%;
+}

@@ -1,0 +1,82 @@
+package com.hxqh.webService.interceptor;
+
+/**
+ * ╔           ←══╬∞           ∝╬══→           ╗
+ * § File Name:  AuthInterceptor.java                             §
+ * §┇File Path: com.hxqh.webService.interceptor.AuthInterceptor           §
+ * §Descrption:     Interceptor是CXF架构中一个很有特色的模式。
+ * 你可以在不对核心模块进行修改的情况下，动态添加很多功能。
+ * 这对于CXF这个以处理消息为中心的服务框架来说是非常有用的，
+ * CXF通过在Interceptor中对消息进行特殊处理，实现了很多重要功能模块。
+ * 这里就是采用拦截器进行用户验证。                                     §
+ * §Version:  V0.1                                       §
+ * §Create Date:   2017/10/12                              §
+ * §IDE:    IntelliJ IDEA.2017                           §
+ * §Font Code:  UTF-8                                    §
+ * §JDK :1.6                                             §
+ * §Author: Ocean_Hy                                     §
+ * §History Version Note:                                §
+ * ╚           ←══╬∞           ∝╬══→           ╝
+ */
+import org.apache.cxf.binding.soap.SoapMessage;
+import org.apache.cxf.binding.soap.saaj.SAAJInInterceptor;
+import org.apache.cxf.interceptor.Fault;
+import org.apache.cxf.phase.AbstractPhaseInterceptor;
+import org.apache.cxf.phase.Phase;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.w3c.dom.NodeList;
+
+import javax.xml.soap.SOAPException;
+import javax.xml.soap.SOAPHeader;
+import javax.xml.soap.SOAPMessage;
+
+public class AuthInterceptor extends AbstractPhaseInterceptor<SoapMessage>{
+    private static final Logger logger = LoggerFactory.getLogger(AuthInterceptor.class);
+    private SAAJInInterceptor saa = new SAAJInInterceptor();
+
+    private static final String USER_NAME = "admin";
+    private static final String USER_PASSWORD = "pass";
+
+    public AuthInterceptor() {
+        super(Phase.PRE_PROTOCOL);
+        getAfter().add(SAAJInInterceptor.class.getName());
+    }
+
+    @Override
+    public void handleMessage(SoapMessage message) throws Fault {
+        SOAPMessage mess = message.getContent(SOAPMessage.class);
+        if (mess == null) {
+            saa.handleMessage(message);
+            mess = message.getContent(SOAPMessage.class);
+        }
+        SOAPHeader head = null;
+        try {
+            head = mess.getSOAPHeader();
+        } catch (Exception e) {
+            logger.error("getSOAPHeader error: {}",e.getMessage(),e);
+        }
+        if (head == null) {
+            throw new Fault(new IllegalArgumentException("找不到Header，无法验证用户信息"));
+        }
+
+        NodeList users = head.getElementsByTagName("username");
+        NodeList passwords = head.getElementsByTagName("password");
+        if (users.getLength() < 1) {
+            throw new Fault(new IllegalArgumentException("找不到用户信息"));
+        }
+        if (passwords.getLength() < 1) {
+            throw new Fault(new IllegalArgumentException("找不到密码信息"));
+        }
+
+        String userName = users.item(0).getTextContent().trim();
+        String password = passwords.item(0).getTextContent().trim();
+        if(USER_NAME.equals(userName) && USER_PASSWORD.equals(password)){
+            logger.debug("admin auth success");
+        } else {
+            SOAPException soapExc = new SOAPException("认证错误");
+            logger.debug("admin auth failed");
+            throw new Fault(soapExc);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+package com.hxqh.eam.service;
+
+_IMPORT_MODEL_
+
+import java.util.List;
+
+/**
+ * Created by lh on _DATE_.
+ */
+public interface _MODEL_Service {
+
+METHOD
+
+}

@@ -1,0 +1,13 @@
+package hxqh.eam.abb.dao;
+
+import com.hxqh.eam.common.basedao.Dao;
+import com.hxqh.eam.model.view.YYYYY;
+
+/**
+ *
+ * @author lh
+ *
+ */
+public interface XXXXX extends Dao<YYYYY> {
+}
+

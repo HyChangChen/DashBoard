@@ -1,0 +1,28 @@
+package com.hxqh.eam.controller;
+
+
+/**
+ * Created by lh on _DATE_.
+ */
+_IMPORT_MODEL_
+
+import com.hxqh.eam.service._MODEL_Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import java.util.List;
+import java.util.Map;
+
+
+@Controller
+@RequestMapping("/_model_")
+public class _MODEL_Controller {
+
+  @Autowired
+  private _MODEL_Service _model_Service;
+
+METHOD
+
+}

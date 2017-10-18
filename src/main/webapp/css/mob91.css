@@ -1,0 +1,89 @@
+#mob91{
+	width: 100%;
+    min-height: 100%;
+    background: #03081C;
+    font-family: Arial;
+}
+#mob91 h3{
+    font-size: 29px;
+    font-weight: bold;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    margin-top: 0px;
+}
+#mob91 table{
+    width: 100%;
+}
+table tr td{
+    border: 2px solid #0C0E26;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+table thead tr:nth-child(1){
+    font-size: 26px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #1f404f;
+    font-family: Arial;
+    color: #fff;
+    text-align: left;
+}
+table thead tr:nth-child(2),table thead tr:nth-child(3){
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background: #005E8A;
+}
+table tbody tr td{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 60px;  
+}
+table tbody tr:nth-child(even){
+    background: #112B3A;
+}
+table tbody tr td.mob-bg-blue{
+    background: #59ce04;
+}
+table tbody tr td.mob-bg-red{
+    background: #ec0100;
+}
+.table-legend{
+     height:50px;
+     width:100%;
+    clear: both;
+ }
+.table-legend .legend-layout{
+    width: 50%;
+    float: left;
+    padding-left: 15px;
+}
+.legend-item{
+    display: block;
+    clear: both;
+}
+.legend-item span{
+    display: block;
+    float: left;
+    height:50px;
+}
+.legend-item span.txt{
+    height:50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+}
+.legend-item span.bg{
+    width: 50px;
+    height: 30px;
+    margin-top: 10px;
+}
+.legend-item span.bg-red{
+    background: red;
+}
+.legend-item span.bg-green{
+    background: #59ce04;
+}
+
